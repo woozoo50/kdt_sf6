@@ -22,7 +22,35 @@ user_pw = "sf1234"
 email = "woozoo50@naver.com"
 age = 35
 
-print("아이디 : " , user_id)
-print("비밀번호 : " , user_pw)
-print("이메일 : " , email)
-print("나이 : " , age)
+print("아이디 :", user_id)
+print(f'아이디 : {user_id}')
+print("비밀번호 :", user_pw)
+print("이메일 :", email)
+print("나이 :", age)
+
+#소수점 처리하기
+#int , float
+n1 = 10
+n2 = 3
+div = n1/n2
+print(div)
+print(type(n1))
+print(type(div))
+print(f'결과값 : {div}')
+print(f'결과값 : {div : .1f}')
+print(f'결과값 : {round(div, 2)}')
+
+# 반올림 함수 - Round(숫자 , 자리수)
+print(round(1.643))
+print(round(1.643, 2))
+
+# 실습 - 빵 30 , 사람 4명
+bread = 30
+people = 4
+
+몫 = bread // people
+나머지 = bread % people
+
+print("빵의 개수 : " + str(몫))
+print("남은 빵의 개수 : " + str(나머지))
+
