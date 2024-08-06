@@ -30,3 +30,12 @@ print(email.split("@"))
 msg = "Hello Python"
 print(msg.replace("Python", "C++"))
 
+#입력받아서 리스트 만들기
+input_num = input("숫자 입력 : ").split(" ")
+print(input_num)
+numbers = []
+for i in input_num:
+    numbers.append(int(i))
+print(numbers)
+
+alpha = "a:b:c:d"

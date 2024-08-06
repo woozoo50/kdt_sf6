@@ -5,7 +5,8 @@ while True:
     print("====================RESTART")
     sel = input("마시고 싶은 음료?")
 
-    for i in vending_machine:
+    n = len(vending_machine)
+    for i in range(0,n-1):
        if sel == str(vending_machine[i]):
           print(f'{sel} 드릴게요')
           vending_machine.remove(sel)
