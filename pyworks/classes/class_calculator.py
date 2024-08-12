@@ -10,7 +10,8 @@ class Calculator:
     def sub(self, y):
         self.x -= y
         return self.x
-
+'''
+# 실행 영역
 c1 = Calculator()
 print(c1.x)
 c2 = c1.add(10)  #c1.x에 10 더하기 , c2에 c1.x값 할당
@@ -25,3 +26,4 @@ print(c5)
 
 print(c1.sub(416))
 print(c1.x)
+'''

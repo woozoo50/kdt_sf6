@@ -20,3 +20,14 @@ print(dog2.kind)
 
 # >> 클래스 이름으로 접근
 print(Dog.kind)
+
+# 객체 리스트
+dogs = [
+    Dog('멍이'),
+    Dog('해피'),
+    Dog('사랑이')
+]
+
+for dog in dogs:
+    print(dog.name)
+    
