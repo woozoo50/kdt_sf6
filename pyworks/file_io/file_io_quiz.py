@@ -38,3 +38,25 @@ except:
     print("파일을 찾을 수 없습니다.")
 
 
+#실습 3
+
+name = input('이름 입력 : ')
+pw = input('비밀번호 입력 : ')
+user = name + " " + pw + "\n"
+
+with open("./source/member.txt", "r") as f:
+    member_list = f.readlines()  # 데이터를 리스트로 반환
+    print(member_list)
+
+# 상태 변수 - True / False
+sw = False  # 상태 초기화 False임
+for member in member_list:  #리스트를 순회하면서
+    if member == user:  # 파일에 있는 member의 name, pw와 입력한 user의 name과 pw가 일치하면
+        sw = True  # 상태 변수를 Ture로 저장
+
+if sw == True:
+    print("로그인 성공!")
+else:
+    print("로그인 실패!")
+
+
